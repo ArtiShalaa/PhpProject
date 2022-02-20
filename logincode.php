@@ -36,7 +36,7 @@ foreach($login_query_run as $data){
             exit(0);
          }
         
-         elseif($_SESSION['auth_role'] == '0') // noemal user
+         elseif($_SESSION['auth_role'] == '0') // normal user
         {
             $_SESSION['message'] = "You are logged in";
             header('Location: index.php');
